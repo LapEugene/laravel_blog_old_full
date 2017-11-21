@@ -32,15 +32,13 @@ class ArticleController extends Controller
     public function getArticle(Request $request, $id)
     {
         $article = Article::find($id);
-        dd($article);
-        dd($request);
         /*if(!$article){
             return response()->json(['message' => 'Doc not found'], 404);
         }
         $article->content = $request->input('content');
         $article->save();
         return response()->json(['quote' => $article], 200);*/
-        return view('blog.index', ['article' => $article]);
+        return view('blog.detail', ['article' => $article]);
     }
     public function deleteArticle($id)
     {
