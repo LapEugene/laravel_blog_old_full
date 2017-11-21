@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/article', [
+    'uses' => 'ArticleController@postArticle'
+]);
+
+Route::get('/articles', [
+    'uses' => 'ArticleController@getArticles'
+]);
+
+Route::put('/article/{id}', [
+    'uses' => 'ArticleController@putArticle'
+]);
+
+Route::delete('/article/{id}', [
+    'uses' => 'ArticleController@deleteArticle'
+]);
