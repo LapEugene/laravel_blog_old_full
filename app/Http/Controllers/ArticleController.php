@@ -29,15 +29,18 @@ class ArticleController extends Controller
         return response()->json($response, 200);*/
         return view('blog.index', ['articles' => $articles]);
     }
-    public function putArticle(Request $request, $id)
+    public function getArticle(Request $request, $id)
     {
         $article = Article::find($id);
-        if(!$article){
+        dd($article);
+        dd($request);
+        /*if(!$article){
             return response()->json(['message' => 'Doc not found'], 404);
         }
         $article->content = $request->input('content');
         $article->save();
-        return response()->json(['quote' => $article], 200);
+        return response()->json(['quote' => $article], 200);*/
+        return view('blog.index', ['article' => $article]);
     }
     public function deleteArticle($id)
     {

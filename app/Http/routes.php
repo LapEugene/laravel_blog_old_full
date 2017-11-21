@@ -23,8 +23,8 @@ Route::get('/articles', [
     'uses' => 'ArticleController@getArticles'
 ]);
 
-Route::put('/article/{id}', [
-    'uses' => 'ArticleController@putArticle'
+Route::get('/article/{id}', [
+    'uses' => 'ArticleController@getArticle'
 ]);
 
 Route::delete('/article/{id}', [
