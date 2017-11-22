@@ -33,9 +33,9 @@ class ArticleController extends Controller
         $search_query = urlencode( $search_query );
         $html = file_get_html( "https://www.google.com/search?q=$search_query&tbm=isch" );
         //dd($html);
-        $image_count = 100; //Enter the amount of images to be shown
+        $image_count = 2; //Enter the amount of images to be shown
         $i = 0;
-        dd($html);
+        //dd($html);
         foreach($html->find('img') as $element){
             if($i == $image_count) break;
             echo $element->src . '<br>';
