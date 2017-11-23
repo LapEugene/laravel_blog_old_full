@@ -14,7 +14,7 @@
                 </h2>
                 <hr>
 
-                <img alt="" src="" id="imgInArticle">
+                <img alt="" src="" id="imgInArticle" class="pull-left">
                 <p>{!! $article->content !!}</p>
                 <hr>
             </div>
