@@ -30,7 +30,3 @@ Route::get('/article/{id}', [
 Route::delete('/article/{id}', [
     'uses' => 'ArticleController@deleteArticle'
 ]);
-
-Route::post('/ajax', [
-    'as' => 'ajax', 'uses' => 'AjaxController@parseAction'
-]);
