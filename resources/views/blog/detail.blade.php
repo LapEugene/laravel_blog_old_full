@@ -8,23 +8,14 @@
             <div class="col-lg-12">
 
                 <hr>
-                <h2 class="text-center">{{$article->content}}
+                <h2 class="text-center">{{$article->name}}
                     <br>
                     <small>{{$article->created_at}}</small>
                 </h2>
-
-                <hr>
-
-                <button id="search">Search image</button>
-                <div id="img">
-                    <img src="" alt="">
-                </div>
-                <button id="insert">Insert image</button>
-                <br>
                 <hr>
 
                 <img alt="" src="" id="imgInArticle">
-                <p>{{$article->content}}</p>
+                <p>{!! $article->content !!}</p>
                 <hr>
             </div>
         </div>
