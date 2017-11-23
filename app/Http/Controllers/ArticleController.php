@@ -35,7 +35,7 @@ class ArticleController extends Controller
         //dd($html);
         $image_count = 100; //Enter the amount of images to be shown
         $i = 0;
-        dd($html);
+        //dd($html);
         foreach($html->find('img') as $element){
             if($i == $image_count) break;
             echo $element->src . '<br>';
