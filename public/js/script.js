@@ -12,6 +12,7 @@ $(function(){
         var formData = new FormData();
         formData.append('string', $self.data('string'));
         formData.append('action', 'upload_photo');
+        if(count > 10)count = 1
         formData.append('count', count);
 
         $.ajax({
