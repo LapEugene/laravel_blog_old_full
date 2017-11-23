@@ -27,6 +27,8 @@ $(function(){
     });
     $('body').on('click', '#insert',  function () {
         var $self = $(this);
-        var src = '';
+        var src = $('#searchedImg').attr('src');
+        $('#imgInArticle').attr('src', src);
+
     });
 });

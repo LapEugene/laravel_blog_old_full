@@ -14,7 +14,17 @@
                 </h2>
                 <hr>
 
-                <img alt="" src="" id="imgInArticle">
+                <button id="search" class="btn btn-default btn-lg pull-left" data-string="{{$article->name}}">
+                    Search image
+                </button>
+                <div id="searchingImg" class="pull-left">
+                    <img src="" alt="" width="100" id="searchedImg">
+                </div>
+                <button id="insert" class="btn btn-default btn-lg">Insert image</button>
+                <br>
+                <hr>
+
+
                 <p>{!! $article->content !!}</p>
                 <hr>
             </div>
