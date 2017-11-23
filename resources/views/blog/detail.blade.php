@@ -23,6 +23,7 @@
                 <button id="insert" class="btn btn-default btn-lg">Insert image</button>
                 <br>
                 <hr>
+                <img alt="" src="" id="imgInArticle" class="pull-left">
                 <p>{!! $article->content !!}</p>
                 <hr>
             </div>
