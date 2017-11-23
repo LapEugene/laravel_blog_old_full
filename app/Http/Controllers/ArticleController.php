@@ -3,10 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-use App\Http\Requests;
 use App\Article;
-//use App\Functions\SimpleHtmlDom;
 
 class ArticleController extends Controller
 {
@@ -24,6 +21,12 @@ class ArticleController extends Controller
     public function getArticles()
     {
         $articles = Article::all();
+        /*$response = [
+            'articles' => $articles
+        ];
+        return response()->json($response, 200);*/
+
+
         return view('blog.index', ['articles' => $articles]);
     }
     public function getArticle(Request $request, $id)
