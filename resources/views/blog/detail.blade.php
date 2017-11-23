@@ -13,7 +13,7 @@
                     <small>{{$article->created_at}}</small>
                 </h2>
                 <hr>
-
+                <div class="clearfix"></div>
                 <img alt="" src="" id="imgInArticle" class="pull-left">
                 <p>{!! $article->content !!}</p>
                 <hr>
