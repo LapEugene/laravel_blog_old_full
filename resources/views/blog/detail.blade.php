@@ -14,7 +14,11 @@
                 </h2>
                 <hr>
 
-                <button id="search" class="btn btn-default btn-lg pull-left" data-string="{{$article->name}}">
+                <button id="search"
+                        class="btn btn-default btn-lg pull-left"
+                        data-string="{{$article->name}}"
+                        data-count="1"
+                >
                     Search image
                 </button>
                 <div id="searchingImg" class="pull-left">

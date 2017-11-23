@@ -20,16 +20,15 @@ class AjaxController extends Controller
                 $search_query = $request['string'];
                 $search_query = urlencode( $search_query );
                 $html = file_get_html( "https://www.google.com/search?q=$search_query&tbm=isch" );
-                $image_count = 2; //Enter the amount of images to be shown
+                $image_count = $request['count'] + 1; //Enter the amount of images to be shown
                 $i = 0;
-
                 foreach($html->find('img') as $element){
                     if($i == $image_count) break;
                     $links[] = $element->getAttribute('src');
                     $i++;
                 }
 
-                return response()->json(array('status' => true, 'img' => $links[1]), 200);
+                return response()->json(array('status' => true, 'img' => $links[$request['count']]), 200);
             default:
                 break;
         }

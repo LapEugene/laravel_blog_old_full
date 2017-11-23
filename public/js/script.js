@@ -5,12 +5,14 @@ $.ajaxSetup({
 });
 
 $(function(){
+    var count = 0;
     $('body').on('click', '#search',  function () {
+        count++;
         var $self = $(this);
         var formData = new FormData();
-
         formData.append('string', $self.data('string'));
         formData.append('action', 'upload_photo');
+        formData.append('count', count);
 
         $.ajax({
             'url': '/ajax',
