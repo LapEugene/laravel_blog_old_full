@@ -7,6 +7,7 @@
     <title>Laravel Blog</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="_token" content="{{ csrf_token() }}" />
 
     @yield('head')
     <link rel="stylesheet" type="text/css" href="{{asset('/css/main.css')}}">
