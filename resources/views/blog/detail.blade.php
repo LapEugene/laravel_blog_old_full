@@ -20,10 +20,12 @@
                     <img src="" alt="">
                 </div>
                 <button id="insert">Insert image</button>
-                <img alt="" src="" id="imgInArticle">
-                {{$article->content}}
+                <br>
                 <hr>
 
+                <img alt="" src="" id="imgInArticle">
+                <p>{{$article->content}}</p>
+                <hr>
             </div>
         </div>
     </div>
