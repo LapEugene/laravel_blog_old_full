@@ -23,8 +23,6 @@
                 <button id="insert" class="btn btn-default btn-lg">Insert image</button>
                 <br>
                 <hr>
-
-
                 <p>{!! $article->content !!}</p>
                 <hr>
             </div>
